@@ -10,8 +10,8 @@ RUN add-apt-repository ppa:jpsutton/cockpit \
     && apt-get -y update 
 RUN apt-get -y install cockpit    
 
-RUN systemctl enable cockpit
-#RUN systemctl start cockpit
+RUN systemctl enable cockpit \
+    && systemctl start cockpit
 
 EXPOSE 9090
 
