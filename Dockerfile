@@ -5,6 +5,7 @@
 From ubuntu:15.04
 Maintainer "Ayoub Boulila" <ayoubboulila@gmail.com>
 
+RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:jpsutton/cockpit \ 
     && apt-get -y update 
 RUN apt-get -y install cockpit    
